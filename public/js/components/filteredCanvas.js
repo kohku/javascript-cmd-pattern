@@ -3,9 +3,9 @@ import { grayscaleCommand, blurCommand, contrastCommand, invertCommand, cssFilte
 export class FilteredCanvasController{
   constructor(){
    
-    this.outputStyle = { };
+    this.outputStyle = { }
     
-    this.commandChain = [];
+    this.commandChain = []
     
     this.commands = [{
       name: 'grayscale',
@@ -19,7 +19,7 @@ export class FilteredCanvasController{
     }, {
       name: 'invert',
       command: invertCommand
-    }];
+    }]
   }
     
   apply(name){
